@@ -11,8 +11,8 @@ export default function Path() {
      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/texas" element={<TexasNews />} />
-        <Route path="/country" element={<Country />} /> 
-        <Route path="/language" element={<Language />} />
+        <Route path="/country/:countryCode" element={<Country />} /> 
+        <Route path="/language/:languageCode" element={<Language />} />
         <Route path="/hot" element={<HotNews />} />
         
       </Routes>

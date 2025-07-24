@@ -1,22 +1,34 @@
-// src/components/NewsCard.js
 import React from 'react';
+import '../styles/newscard.css';
+
+const MAX_DESCRIPTION_LENGTH = 150; // Adjust as needed for 2–3 lines
+
+const truncateText = (text, maxLength) => {
+  if (!text) return "";
+  return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+};
 
 const NewsCard = ({ article }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 mb-6">
-      <h3 className="text-xl font-semibold mb-2">{article.title}</h3>
-      {article.urlToImage && (
-        <img src={article.urlToImage} alt="news" className="w-full h-56 object-cover rounded" />
+    <div className="news-card">
+      {article.image_url && (
+        <img src={article.image_url} alt="news" />
       )}
-      <p className="text-gray-700 mt-2">{article.description}</p>
-      <a
-        href={article.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 font-medium block mt-3"
-      >
-        Read More →
-      </a>
+
+      <div className="news-card-content">
+        <h3 className="news-card-title">{article.title}</h3>
+        <p className="news-card-description">
+          {truncateText(article.description, MAX_DESCRIPTION_LENGTH)}
+        </p>
+        <a
+          href={article.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="news-card-link"
+        >
+          Read More →
+        </a>
+      </div>
     </div>
   );
 };

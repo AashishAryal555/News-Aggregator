@@ -1,20 +1,20 @@
-// src/api/newsApi.js
-import axios from 'axios';
+import axios from "axios";
 
-const API_KEY = 'Ypub_e8e248600bcb44dc9a9b360b7ec37757'; // Replace with your actual key
-const BASE_URL = 'https://newsapi.org/v2';
+const API_KEY = "pub_178b9aa984f24cc993dda726417818b0";
+const BASE_URL = "https://newsdata.io/api/1/news";
 
-export const fetchTopHeadlines = async () => {
-  try {
-    const response = await axios.get(`${BASE_URL}/top-headlines`, {
-      params: {
-        country: 'us', // You can change to 'in', 'gb', 'np', etc.
-        apiKey: API_KEY,
-      },
-    });
-    return response.data.articles;
-  } catch (error) {
-    console.error('Error fetching news:', error);
-    return [];
-  }
+export const fetchNews = async (params = {}) => {
+	try {
+		const queryParams = new URLSearchParams({
+			apikey: API_KEY,
+			language: "en",
+			...params,
+		});
+
+		const url = `${BASE_URL}?${queryParams.toString()}`;
+		const response = await axios.get(url);
+		return response.data.results;
+	} catch (error) {
+		throw error;
+	}
 };
