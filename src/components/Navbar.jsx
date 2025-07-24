@@ -14,8 +14,8 @@ const Navbar = () => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/country/us">Country</Link></li>
           <li><Link to="/language/en">Language</Link></li>
-          <li><Link to="/hot">Hot News</Link></li>
-          <li><Link to="/texas">Texas News</Link></li>
+          <li><Link to="/TexasNews">Texas News</Link></li>
+          <li><Link to ="/About">About</Link></li>
         </ul>
       </div>
     </nav>

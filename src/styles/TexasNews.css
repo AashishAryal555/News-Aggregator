@@ -1,0 +1,36 @@
+.texas-news-container {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 700px;
+  margin: 50px auto;
+  border: 2px solid #ff7e5f;
+}
+
+.texas-news-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #b22222;
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+}
+
+.texas-news-description {
+  font-size: 1.2rem;
+  color: #333;
+  font-family: 'Verdana', sans-serif;
+}
+
+img {
+  width: 120px;
+  height: auto;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

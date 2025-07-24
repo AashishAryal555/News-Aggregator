@@ -4,16 +4,17 @@ import Home from './components/Home'
 import TexasNews from './components/TexasNews'
 import Country from './components/Country'
 import Language from './components/Language'
-import HotNews from './components/HotNews'
+import About from './components/About'
 
 export default function Path() {
   return (
      <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/texas" element={<TexasNews />} />
+        <Route path="/TexasNews" element={<TexasNews />} />
         <Route path="/country/:countryCode" element={<Country />} /> 
         <Route path="/language/:languageCode" element={<Language />} />
-        <Route path="/hot" element={<HotNews />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Home" element={<Home />} />
         
       </Routes>
   )
