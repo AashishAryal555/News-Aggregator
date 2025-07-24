@@ -3,7 +3,7 @@ import React from 'react'
 export default function HotNews() {
   return (
     <div>
-      Hot
+      Hot news coming soon!
     </div>
   )
 }
