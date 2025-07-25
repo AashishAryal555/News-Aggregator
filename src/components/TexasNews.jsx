@@ -56,6 +56,7 @@ Thank you to our entire academic team, students, and supporters who made this ac
   ];
 
   return (
+<<<<<<< HEAD
    <div className="news-grid">
   {texasnews.map((newsItem, index) => (
     <div key={index} className="news-item">
@@ -68,6 +69,13 @@ Thank you to our entire academic team, students, and supporters who made this ac
           className="news-image"
         />
       )}
+=======
+    <div>
+      Texas news coming soon!
+        Working on it!
+      <p>Stay tuned for the latest updates from Texas!</p>
+      <p>Check back later for more information.</p>
+>>>>>>> 0d23caa0383e88741ac0588a85b5b31eb1703e36
     </div>
   ))}
 </div>
