@@ -1,0 +1,9 @@
+/* src/styles/loading.css */
+.loading-text {
+  font-size: 1.5rem;      /* Bigger text size */
+  color: #333;            /* Dark gray color */
+  font-weight: 600;       /* Semi-bold */
+  text-align: center;     /* Center the text horizontally */
+  padding: 1em 0;         /* Vertical padding */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

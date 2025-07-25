@@ -5,6 +5,7 @@ import TexasNews from './components/TexasNews'
 import Country from './components/Country'
 import Language from './components/Language'
 import About from './components/About'
+import Search from './components/Search'
 
 export default function Path() {
   return (
@@ -15,6 +16,7 @@ export default function Path() {
         <Route path="/language/:languageCode" element={<Language />} />
         <Route path="/About" element={<About />} />
         <Route path="/Home" element={<Home />} />
+        <Route path="/Search" element={<Search />} />
         
       </Routes>
   )

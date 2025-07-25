@@ -16,6 +16,7 @@ const Navbar = () => {
           <li><Link to="/language/en">Language</Link></li>
           <li><Link to="/TexasNews">Texas News</Link></li>
           <li><Link to ="/About">About</Link></li>
+          <li><Link to ="/Search">Search</Link></li>
         </ul>
       </div>
     </nav>
