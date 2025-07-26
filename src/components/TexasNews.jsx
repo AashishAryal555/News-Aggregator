@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../assets/download.png"; // Make sure this image exists
 import "../styles/TexasNews.css";
-import TheElements from "../assets/TheElement.jpg"; // Import the image for The Elements
-import TikTok from "../assets/tiktok.jpg"; 
-import Proud from "../assets/Proud.jpg"; // Import the image for Proud Moment
+import TheElements from "../assets/TheElement.jpg";
+import TikTok from "../assets/tiktok.jpg";
+import Proud from "../assets/Proud.jpg";
+
 export function TexasNews() {
   const texasnews = [
     {
@@ -25,7 +25,9 @@ Don't miss the energy, the vibes, and the music! 🎶🔥
 #TexasBitesFestival #TheElements #LiveMusic #TexasInternationalCollege #NepalEvents #MusicFestival #FoodAndFun`,
       image: TheElements,
     },
-    { title: "Tik Tok Competition", description: `🎬 Texas College TikTok Competition 2025 🎉
+    {
+      title: "Tik Tok Competition",
+      description: `🎬 Texas College TikTok Competition 2025 🎉
 Unleash your creativity and stand a chance to win Cash Prize of Rs. 50,000 and more exciting rewards!
 
 📅 Registration Deadline: 20th July, 2025
@@ -39,9 +41,9 @@ Unleash your creativity and stand a chance to win Cash Prize of Rs. 50,000 and m
 📞 For more info: 01-4589134 | 9801644458 | 9801644462
 
 #TexasTikTok2025 #CashPrizeRs50000 #DigitalTalent #TexasCollege #TikTokCompetition #ShowYourTalent #TCMIT`,
-      image: TikTok,},
-
-      {
+      image: TikTok,
+    },
+    {
       title: "Texas Prides",
       description: `🏆 Proud Moment for Texas International College!
 We are truly honored to receive the Best Innovative Teaching Practice Award at the prestigious Kendrabindu Education Excellence Awards 2025.
@@ -51,35 +53,26 @@ This recognition is a testament to our commitment to delivering excellence in ed
 Thank you to our entire academic team, students, and supporters who made this achievement possible!
 
 #TexasInternationalCollege #KendrabinduAwards2025 #ProudMoment #EducationExcellence`,
-      image:Proud,
+      image: Proud,
     },
   ];
 
   return (
-<<<<<<< HEAD
-   <div className="news-grid">
-  {texasnews.map((newsItem, index) => (
-    <div key={index} className="news-item">
-      <h2>{newsItem.title}</h2>
-      <p>{newsItem.description}</p>
-      {newsItem.image && (
-        <img
-          src={newsItem.image}
-          alt={newsItem.title}
-          className="news-image"
-        />
-      )}
-=======
-    <div>
-      Texas news coming soon!
-        Working on it!
-      <p>Stay tuned for the latest updates from Texas!</p>
-      <p>Check back later for more information.</p>
->>>>>>> 0d23caa0383e88741ac0588a85b5b31eb1703e36
+    <div className="news-grid">
+      {texasnews.map((newsItem, index) => (
+        <div key={index} className="news-item">
+          <h2>{newsItem.title}</h2>
+          <p>{newsItem.description}</p>
+          {newsItem.image && (
+            <img
+              src={newsItem.image}
+              alt={newsItem.title}
+              className="news-image"
+            />
+          )}
+        </div>
+      ))}
     </div>
-  ))}
-</div>
-
   );
 }
 
@@ -95,4 +88,6 @@ export function Error({ message }) {
   );
 }
 
+// If you're using named imports only, you can remove this:
 export default TexasNews;
+

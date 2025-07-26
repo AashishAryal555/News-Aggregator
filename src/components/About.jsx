@@ -62,7 +62,7 @@ decision-making to drive sustainable success and impact in our industry.</p>
 
     <div className="team-card"><div><img src={Himal} alt="Himal"/></div>
       Himal Sunar – UI/UX Designer (Co-Founder)
-        <p>As the Co-Founder of [Burning News], Mr Himal Sunar have been instrumental in shaping the company’s vision, building its foundation, and driving its growth from the ground up. My role spans across strategic planning, team leadership, product development, and day-to-day operations. I bring innovation, resilience, and long-term thinking to every decision, ensuring we stay aligned with our mission while adapting to changing market dynamics.</p>
+        <p>As the Co-Founder of [Burning News], Mr Himal Sunar have been instrumental in shaping the company’s vision, building its foundation, and driving its growth from the ground up. Mr Himal Sunar role spans across strategic planning, team leadership, product development, and day-to-day operations. Mr Himal Sunar bring innovation, resilience, and long-term thinking to every decision, ensuring we stay aligned with our mission while adapting to changing market dynamics.</p>
         </div>
 
 

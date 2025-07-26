@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "pub_9deecb42670c4744aab59e5ab36fb54e";
+const API_KEY = "pub_7c6bf9f1611a4c01bf6a82834450020f";
 const BASE_URL = "https://newsdata.io/api/1/news";
 
 // api/newsApi.js

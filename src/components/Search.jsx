@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Search.css';
 
-const API_KEY = 'pub_9deecb42670c4744aab59e5ab36fb54e'; // Your actual key
+const API_KEY = 'pub_7c6bf9f1611a4c01bf6a82834450020f'; // Your actual key
 
 export default function Search() {
   const [query, setQuery] = useState('');
